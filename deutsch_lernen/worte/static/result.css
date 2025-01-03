@@ -1,0 +1,17 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: chocolate;
+    padding-top: 6px;
+    margin-top: 10%;
+}
+h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: brown;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    color: cadetblue;
+}

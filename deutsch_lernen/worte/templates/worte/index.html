@@ -1,0 +1,48 @@
+{% csrf_token %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deutsch Lernen</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="gen_app">
+
+        <h3 id="title_app">Wähle die richtige Form des Wortes.</h3>
+        
+        
+
+        <p id="par_app">Wort: {{word.namedeutsch}} </p> <br>
+
+        <ul id="list_app">
+            {% for label, choice in choiceswithlabels %}
+            <li>
+                <button class="choice-btn" data-choice="{{ choice }}">{{ label }}: {{ choice }}</button>
+            </li>
+            {% endfor %}
+        </ul>
+        
+
+       
+
+        <div class="but_app">
+
+            <button id="but1">Zurück</button>
+            <button id="but2">Weiter</button>
+            <button id="but3" type="submit">Fertigstellen</button>
+
+        </div>
+
+
+
+    </div>
+
+    <script src="{% static 'quiz.js' %}"></script>
+
+</body>
+</html>

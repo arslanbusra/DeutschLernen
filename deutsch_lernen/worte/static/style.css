@@ -1,0 +1,72 @@
+.gen_app{
+    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10%;
+    margin-top:1px;
+    font-size: 20px;
+    
+}
+
+#title_app{
+    color: chocolate;
+    text-align: center;
+}
+
+#par_app{
+    color: rgb(212, 145, 97);
+    text-align:center
+}
+
+#list_app {
+    list-style: none; 
+    padding: 6; 
+    margin: 4 auto; 
+    text-align: center; 
+}
+
+#list_app .choice-btn {
+    color: rgb(80, 48, 25);
+    background-color: rgba(165, 42, 42, 0.527);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 6px beige;
+    font-style: normal;
+    
+}
+
+#list_app .choice-btn:hover {
+    background-color: burlywood; 
+}
+
+#list_app .choice-btn:active {
+    background-color: rgb(212, 235, 212);
+    box-shadow: 0 3px;
+    transform: translate(2px);
+}
+
+
+.but_app{
+    
+    justify-content: center; 
+    align-items: center; 
+    display: flex;
+    gap: 20px;
+}
+
+#but1, #but2, #but3{
+
+    color: brown;
+    background-color: bisque;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 4px solid;
+}
+
+
+
+
+
+
+
+
+
