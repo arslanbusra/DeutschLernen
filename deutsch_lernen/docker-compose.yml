@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  app:
+    image: deutsch_lernen_app:latest
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - DJANGO_SETTINGS_MODULE=deutsch_lernen.settings
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+    restart: always
+    
+  nginx:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - app
+

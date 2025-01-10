@@ -1,0 +1,15 @@
+[Unit]
+Description=My Django Application
+After=network.target
+
+[Service]
+User=busra
+WorkingDirectory=/mnt/c/Users/busra.arslan/Desktop/deutsch/deutsch_lernen
+ExecStart=/mnt/c/Users/busra.arslan/Desktop/deutsch/deutsch_lernen/venv/bin/python manage.py runserver 0.0.0.0:8000
+Restart=always
+StandardOutput=append:/mnt/c/Users/busra.arslan/Desktop/deutsch/deutsch_lernen/myapp_output.log
+StandardError=append:/mnt/c/Users/busra.arslan/Desktop/deutsch/deutsch_lernen/myapp_error.log
+
+[Install]
+WantedBy=multi-user.target
+

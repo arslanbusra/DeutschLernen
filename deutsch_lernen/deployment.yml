@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deutsch-lernen-deployment
+  labels:
+    app: deutsch-lernen
+spec:
+  replicas: 2  
+  selector:
+    matchLabels:
+      app: deutsch-lernen
+  template:
+    metadata:
+      labels:
+        app: deutsch-lernen
+    spec:
+      containers:
+      - name: deutsch-lernen-app
+        image: deutsch_lernen_app:latest  
+        ports:
+        - containerPort: 8000
+
